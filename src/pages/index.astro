@@ -2,7 +2,6 @@
 import Layout from '../layouts/Layout.astro';
 import Header from '../components/Header.astro';
 import ExperienceItem from '../components/ExperienceItem.astro';
-import CertificationBadge from '../components/CertificationBadge.astro';
 import SkillSection from '../components/SkillSection.astro';
 import BentoItem from '../components/BentoItem.astro';
 
@@ -240,9 +239,11 @@ import achievementsData from '../data/achievements.json';
 
           // Show corresponding panel
           const panelId = tab.getAttribute('aria-controls');
-          const panel = document.getElementById(panelId);
-          if (panel) {
-            panel.classList.remove('hidden');
+          if (panelId) {
+            const panel = document.getElementById(panelId);
+            if (panel) {
+              panel.classList.remove('hidden');
+            }
           }
         });
       });
