@@ -1,0 +1,100 @@
+---
+interface Props {
+  work: {
+    name: string;
+    position: string;
+    startDate: string;
+    endDate: string;
+    logo?: string;
+    brandColor?: string;
+    highlights: string[];
+  };
+  isFirst: boolean;
+}
+
+const { work, isFirst } = Astro.props;
+
+// Format dates
+const formatDate = (dateString: string) => {
+  if (dateString === "Present") return "Present";
+  const date = new Date(dateString);
+  return date.toLocaleDateString('en-US', { month: 'short', year: 'numeric' });
+};
+
+// Check if this is Amazon (for GenAI spotlight)
+const isAmazon = work.name.includes("Amazon");
+
+// Use brand color if provided, otherwise default colors
+const timelineDotColor = work.brandColor || (isAmazon ? '#ff9900' : '#4f46e5');
+const borderColor = work.brandColor || (isAmazon ? '#ff9900' : '#4f46e5');
+const companyNameColor = work.brandColor || (isAmazon ? '#ff9900' : '#1e293b');
+
+// Check if highlight mentions GenAI/AI
+const isGenAIHighlight = (text: string) => {
+  return text.toLowerCase().includes('genai') || 
+         text.toLowerCase().includes('agentic') || 
+         text.toLowerCase().includes('document review assistant');
+};
+---
+
+<div class={`relative pl-8 pb-8 ${isFirst ? '' : 'pt-2'}`}>
+  <!-- Timeline Line -->
+  <div class="absolute left-2 top-0 bottom-0 w-0.5 bg-gray-300"></div>
+  
+  <!-- Timeline Dot -->
+  <div 
+    class="absolute left-0 top-2 w-4 h-4 rounded-full border-4"
+    style={`background-color: ${timelineDotColor}; border-color: ${timelineDotColor}33;`}
+  ></div>
+  
+  <!-- Content Card -->
+  <div 
+    class="bg-white rounded-lg shadow-sm border-l-4 p-5"
+    style={`border-left-color: ${borderColor};`}
+  >
+    <!-- Company & Period -->
+    <div class="flex flex-wrap justify-between items-start mb-3">
+      <div class="flex items-center gap-3">
+        {work.logo && (
+          <img 
+            src={work.logo} 
+            alt={`${work.name} logo`}
+            class="w-12 h-12 object-contain rounded bg-white p-1 border border-gray-200"
+          />
+        )}
+        <div>
+          <h3 class="text-xl font-bold" style={`color: ${companyNameColor};`}>
+            {work.name}
+          </h3>
+          <p class="text-brand-accent font-semibold">{work.position}</p>
+        </div>
+      </div>
+      <span class="text-sm text-gray-600 font-medium whitespace-nowrap">
+        {formatDate(work.startDate)} - {formatDate(work.endDate)}
+      </span>
+    </div>
+    
+    <!-- Highlights -->
+    <ul class="space-y-2">
+      {work.highlights.map((highlight) => (
+        <li 
+          class={`flex items-start gap-2 text-gray-700 ${
+            isGenAIHighlight(highlight) ? 'bg-brand-accent/5 -mx-2 px-2 py-1.5 rounded border-l-2 border-brand-accent' : ''
+          }`}
+        >
+          <svg 
+            class={`w-5 h-5 mt-0.5 flex-shrink-0 ${
+              isGenAIHighlight(highlight) ? 'text-brand-accent' : 'text-brand-primary'
+            }`} 
+            fill="none" 
+            stroke="currentColor" 
+            viewBox="0 0 24 24"
+          >
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+          </svg>
+          <span class="flex-1">{highlight}</span>
+        </li>
+      ))}
+    </ul>
+  </div>
+</div>

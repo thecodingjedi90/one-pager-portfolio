@@ -1,0 +1,23 @@
+---
+interface Props {
+  certificate: {
+    name: string;
+  };
+}
+
+const { certificate } = Astro.props;
+---
+
+<div 
+  class="inline-flex items-center gap-2 px-4 py-2 bg-white border-2 border-tech-salesforce/20 rounded-full shadow-sm hover:shadow-md hover:border-tech-salesforce transition-all"
+>
+  <!-- Salesforce Badge Icon -->
+  <svg class="w-5 h-5 text-tech-salesforce" fill="currentColor" viewBox="0 0 24 24">
+    <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
+  </svg>
+  
+  <!-- Certificate Name -->
+  <span class="text-sm font-medium text-gray-800">
+    {certificate.name}
+  </span>
+</div>

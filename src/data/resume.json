@@ -1,0 +1,144 @@
+{
+  "basics": {
+    "name": "Parjanya Roy",
+    "label": "Salesforce Application & System Architect",
+    "email": "parjanyaroy2021@gmail.com",
+    "phone": "+91 8179097859",
+    "url": "https://salesforce.com/trailblazer/parjanyaroy",
+    "summary": "Salesforce System and Application Architect with 13 years of IT experience, specializing in Salesforce platform development and designing scalable enterprise solutions. Expertise in AWS services, CI/CD automation, and leading digital transformation initiatives.",
+    "location": { "city": "Hyderabad", "countryCode": "IN" },
+    "profiles": [
+      {
+        "network": "LinkedIn",
+        "url": "https://linkedin.com/in/parjanyaroy"
+      }
+    ]
+  },
+  "technicalExposure": [
+    "13+ years of combined experience across Salesforce and Java technologies, including roles as Application Architect and Senior Developer at major firms like Amazon, KPMG Global Services, Deloitte USI, Oracle India, and Tata Consultancy Services, with expertise in Salesforce development, architecture, HCM Fusion Applications, and Java/J2EE/ATG development.",
+    "Analysed and provided designs to meet business requirements leveraging aura components, lightning flows, triggers, apex, lightning web components (LWC), integration scenarios, apex design pattern etc.",
+    "Led strategic release planning and deployment across multiple sandboxes using Jenkins CI/CD pipelines and Gearset deployment tool (with Git and Bitbucket), implementing DevOps practices and Agile methodology to ensure automated and successful production releases",
+    "Led complex data integration initiatives and system optimization using AWS services (Redshift, Glue, Lambda, S3) and Salesforce best practices, including data migration, transformation, and root cause analysis of data inconsistencies across integrated systems, resulting in enhanced data integrity and system performance.",
+    "Architected and implemented document analysis and intelligent information extraction solutions utilizing AWS services integrated with Agentic AI (Strands Agent), enabling automated processing of complex documents",
+    "Experience in working with managed packages such as TrackWise Digital and document generation framework such as PDFTron."
+  ],
+  "otherInitiatives": [
+    "Implemented GenAI-powered Chat Bot using hosted LLM models for SNAP/MAGI screening solution",
+    "Built Salesforce integrations with Alexa, Unity, and IoT devices (Node MCU)",
+    "Developed GenAI-powered Chrome extension for automated information processing across multiple browsers",
+    "Led new Salesforce org implementation with robust security protocols and compliance standards",
+    "Created data transformation framework for Redshift-to-Salesforce data migration using configurable mapping",
+    "Led presales and technical initiatives for cloud opportunities; developed reusable assets including Test Class Generator, Apex optimizer, Mock Framework, and LWC components",
+    "Built Experience Cloud portal for 150+ users managing employee data, certifications, and staffing with automated workflows"
+  ],
+  "work": [
+    {
+      "name": "Amazon Development Centre India",
+      "position": "System Development Engineer II",
+      "startDate": "2024-10",
+      "endDate": "Present",
+      "logo": "/Project_Resume/logos/amazon.png",
+      "brandColor": "#FF9900",
+      "highlights": [
+        "Architecting 'Amazon Uphold' application  for enterprise financial requests and leading Tax-PMO/Tax-Core initiatives.",
+        "Developing GenAI-powered Document Review Assistant using AWS Strands Agentic framework for automated summarization.",
+        "Transformed deployment processes from manual change-sets to automated CI/CD pipelines.",
+        "Designed automated user provisioning integrating Salesforce SSO with Andes employee database."
+      ]
+    },
+    {
+      "name": "KPMG Global Services",
+      "position": "Assistant Manager",
+      "startDate": "2022-02",
+      "endDate": "2024-10",
+      "logo": "/Project_Resume/logos/kpmg.png",
+      "brandColor": "#00338D",
+      "highlights": [
+        "Implemented Case Management Systems for Pharma clients using Case Assignment, Email-To-Case, and Apex customization.",
+        "Architected integration scenarios with Esker and managed packages like TrackWise Digital.",
+        "Led solutioning and estimation for complex Service Cloud business requirements."
+      ]
+    },
+    {
+      "name": "Deloitte USI",
+      "position": "Senior Consultant",
+      "startDate": "2018-05",
+      "endDate": "2022-02",
+      "logo": "/Project_Resume/logos/deloitte.png",
+      "brandColor": "#86BC25",
+      "highlights": [
+        "Designed applications using Aura and LWC frameworks with complex Apex logic.",
+        "Established integration frameworks with multiple 3rd party applications via Jenkins-based CI/CD pipelines.",
+        "Customized Salesforce OMS flows and scheduled routine batch jobs for e-commerce clients."
+      ]
+    },
+    {
+      "name": "Oracle India Pvt. Ltd.",
+      "position": "Application Developer",
+      "startDate": "2015-11",
+      "endDate": "2018-04",
+      "logo": "/Project_Resume/logos/oracle.png",
+      "brandColor": "#F80000",
+      "highlights": [
+        "Understand the Operator requirements, evaluate the gaps in implementation along with customizations if required.",
+        "Bug analysis, debugging and providing fix for issues in Java and PLSQL"
+      ]
+    },
+    {
+      "name": "Tata Consultancy Services",
+      "position": "Systems Engineer",
+      "startDate": "2013-02",
+      "endDate": "2015-11",
+      "logo": "/Project_Resume/logos/tcs.png",
+      "brandColor": "#5E2A8D",
+      "highlights": [
+        "Implementing business logic in Core Java to customize various out of the box features as per customer needs",
+        "Development of concept of delivery priority, webservice calls for Payment Authorization, Address Functionality for Order"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "West Bengal University of Technology",
+      "area": "Electronics and Communication",
+      "studyType": "B. Tech",
+      "score": "9.12 GPA",
+      "endDate": "2012"
+    },
+    {
+      "institution": "ISC/ICSE Board",
+      "area": "Science",
+      "studyType": "High School",
+      "score": "XII: 90.25%, X: 88.60%",
+      "endDate": "2008"
+    }
+  ],
+  "certificates": [
+    { "name": "Salesforce Certified Application Architect" },
+    { "name": "Salesforce Certified System Architect" },
+    { "name": "Data Architect" },
+    { "name": "Sharing and Visibility Architect" },
+    { "name": "Integration Architect" },
+    { "name": "Identity and Access Management Architect" },
+    { "name": "Development Lifecycle and Deployment Architect" },
+    { "name": "AI Associate" }
+  ],
+  "skills": [
+    {
+      "name": "Salesforce",
+      "keywords": ["LWC", "Apex", "Aura", "Flows", "Service Cloud", "Experience Cloud", "OMS"]
+    },
+    {
+      "name": "Cloud & AI",
+      "keywords": ["AWS (Redshift, Lambda, S3, Glue)", "Agentic AI (Strands Agent)", "GenAI LLMs"]
+    },
+    {
+      "name": "DevOps",
+      "keywords": ["Jenkins", "GitHub Actions", "Gearset", "Bitbucket", "CI/CD"]
+    },
+    {
+      "name": "Legacy Tech",
+      "keywords": ["Core Java", "J2EE", "PLSQL"]
+    }
+  ]
+}

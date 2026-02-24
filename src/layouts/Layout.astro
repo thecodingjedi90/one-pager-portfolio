@@ -1,0 +1,141 @@
+---
+interface Props {
+  title: string;
+  description: string;
+}
+
+const { title, description } = Astro.props;
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content={description} />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="generator" content={Astro.generator} />
+    
+    <!-- SEO Meta Tags -->
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:type" content="profile" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={description} />
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+    
+    <title>{title}</title>
+    
+    <style is:global>
+      /* Print Optimization */
+      @media print {
+        * {
+          -webkit-print-color-adjust: exact;
+          print-color-adjust: exact;
+        }
+        
+        body {
+          font-size: 9pt;
+          line-height: 1.2;
+        }
+        
+        .no-print {
+          display: none !important;
+        }
+        
+        .print-page-break {
+          page-break-before: always;
+        }
+        
+        a {
+          text-decoration: none;
+          color: inherit;
+        }
+        
+        /* Sidebar layout for print */
+        main {
+          display: flex !important;
+          flex-direction: row !important;
+          gap: 12pt;
+        }
+        
+        aside {
+          width: 200pt !important;
+          flex-shrink: 0;
+        }
+        
+        aside section {
+          margin-bottom: 10pt;
+        }
+        
+        aside h2 {
+          font-size: 11pt;
+          margin-bottom: 4pt;
+        }
+        
+        aside .bg-white {
+          padding: 6pt;
+          margin-bottom: 4pt;
+        }
+        
+        /* Profile image in print */
+        header img {
+          width: 60pt !important;
+          height: 60pt !important;
+          border-width: 2pt !important;
+        }
+        
+        /* Company logos in print */
+        .flex.items-center.gap-3 img {
+          width: 28pt !important;
+          height: 28pt !important;
+        }
+        
+        /* Compact spacing for print */
+        h1 {
+          font-size: 18pt;
+          margin-bottom: 6pt;
+        }
+        
+        h2 {
+          font-size: 12pt;
+          margin-top: 8pt;
+          margin-bottom: 4pt;
+        }
+        
+        h3 {
+          font-size: 10pt;
+          margin-bottom: 3pt;
+        }
+        
+        p, li {
+          font-size: 8.5pt;
+          margin-bottom: 2pt;
+        }
+        
+        .section-spacing {
+          margin-bottom: 8pt;
+        }
+        
+        /* Ensure content fits on one page */
+        @page {
+          margin: 0.5in;
+          size: letter;
+        }
+      }
+      
+      /* Smooth scroll behavior */
+      html {
+        scroll-behavior: smooth;
+      }
+    </style>
+  </head>
+  <body class="bg-gray-50 text-gray-900 font-sans antialiased">
+    <slot />
+  </body>
+</html>

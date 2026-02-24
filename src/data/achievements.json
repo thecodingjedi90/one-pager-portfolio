@@ -1,0 +1,46 @@
+{
+  "achievements": [
+    {
+      "title": "PageScoutAI - Chrome Extension",
+      "description": "AI-powered Chrome extension for <a href='#' target='_blank' class='text-brand-accent hover:underline'>automated information processing</a> across multiple browsers",
+      "image": "/Project_Resume/achievements/pagescout.jpg",
+      "date": "2024-03"
+    },
+    {
+      "title": "Salesforce File Migrator",
+      "description": "Automated file migration tool for <a href='#' target='_blank' class='text-brand-accent hover:underline'>Salesforce environments</a>",
+      "image": "/Project_Resume/achievements/file-migrator.jpg",
+      "date": "2023-08"
+    },
+    {
+      "title": "Salesforce Multi-level Related List",
+      "description": "Custom Lightning component for displaying <a href='#' target='_blank' class='text-brand-accent hover:underline'>hierarchical related records</a>",
+      "image": "/Project_Resume/achievements/related-list.jpg",
+      "date": "2023-05"
+    },
+    {
+      "title": "Outlawed - Hovercraft Racing [Unity Game]",
+      "description": "3D racing game built with Unity featuring <a href='#' target='_blank' class='text-brand-accent hover:underline'>physics-based hovercraft mechanics</a>",
+      "image": "/Project_Resume/achievements/outlawed.jpg",
+      "date": "2022-12"
+    },
+    {
+      "title": "Support Squad - IOT Switch",
+      "description": "IoT-based switch control system integrated with <a href='#' target='_blank' class='text-brand-accent hover:underline'>Salesforce and Node MCU</a>",
+      "image": "/Project_Resume/achievements/support-squad.jpg",
+      "date": "2023-02"
+    },
+    {
+      "title": "SNAP/MAGI - GenAI Chatbot",
+      "description": "GenAI-powered chatbot using hosted LLM models for <a href='#' target='_blank' class='text-brand-accent hover:underline'>SNAP/MAGI screening solution</a>",
+      "image": "/Project_Resume/achievements/snap-magi.jpg",
+      "date": "2024-01"
+    },
+    {
+      "title": "KanByte - Kanban Board Application",
+      "description": "Full-featured Kanban board application for <a href='#' target='_blank' class='text-brand-accent hover:underline'>project and task management</a>",
+      "image": "/Project_Resume/achievements/kanbyte.jpg",
+      "date": "2023-04"
+    }
+  ]
+}
