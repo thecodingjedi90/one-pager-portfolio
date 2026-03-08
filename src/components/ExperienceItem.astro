@@ -57,7 +57,7 @@ const isGenAIHighlight = (text: string) => {
       <div class="flex items-center gap-3">
         {work.logo && (
           <img 
-            src={`${import.meta.env.BASE_URL}${work.logo.startsWith('/') ? work.logo.slice(1) : work.logo}`}
+            src={`${import.meta.env.BASE_URL}${work.logo}`}
             alt={`${work.name} logo`}
             class="w-12 h-12 object-contain rounded bg-white p-1 border border-gray-200"
           />
