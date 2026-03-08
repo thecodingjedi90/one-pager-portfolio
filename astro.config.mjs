@@ -7,4 +7,12 @@ export default defineConfig({
   base: '/parjanya-roy-portfolio',
   integrations: [tailwind()],
   output: 'static',
+  build: {
+    assets: '_astro'
+  },
+  vite: {
+    build: {
+      assetsInlineLimit: 0
+    }
+  }
 });
