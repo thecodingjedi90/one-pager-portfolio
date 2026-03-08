@@ -3,7 +3,6 @@ import Layout from '../layouts/Layout.astro';
 import Header from '../components/Header.astro';
 import ExperienceItem from '../components/ExperienceItem.astro';
 import SkillSection from '../components/SkillSection.astro';
-import BentoItem from '../components/BentoItem.astro';
 
 // Import data from JSON files
 import resumeData from '../data/resume.json';
@@ -190,25 +189,66 @@ import achievementsData from '../data/achievements.json';
     </div>
     <!-- End Panel 1: Professional Accomplishment -->
 
-    <!-- Panel 2: Other Achievements -->
+    <!-- Panel 2: Coding and Architecture -->
     <div id="panel-other" role="tabpanel" aria-labelledby="tab-other" class="hidden">
       <div class="max-w-6xl mx-auto">
-        <h2 class="text-3xl font-bold text-brand-primary mb-8">Other Achievements</h2>
+        <h2 class="text-3xl font-bold text-brand-primary mb-8">Coding and Architecture</h2>
         
-        <!-- Bento Grid -->
-        <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-6 auto-rows-auto">
-          {achievementsData.achievements.map((achievement, index) => {
-            // Vary sizes for visual interest in bento grid
-            let size: 'small' | 'medium' | 'large' = 'small';
-            if (index === 0 || index === 5) size = 'medium';
-            if (index === 2) size = 'large';
-            
-            return <BentoItem achievement={achievement} size={size} />;
-          })}
+        <!-- 3-Column Card Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
+          {achievementsData.achievements.map((achievement) => (
+            <div class="bg-white rounded-xl shadow-sm hover:shadow-lg transition-all duration-300 overflow-hidden border border-gray-200 hover:border-brand-accent group">
+              <!-- Image Section -->
+              <div class="relative h-48 overflow-hidden bg-gradient-to-br from-brand-accent/10 to-tech-salesforce/10">
+                <img 
+                  src={`${import.meta.env.BASE_URL}${achievement.image}`}
+                  alt={achievement.title}
+                  class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                  onerror="this.src='data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' viewBox=\'0 0 400 300\'%3E%3Crect fill=\'%234f46e5\' width=\'400\' height=\'300\'/%3E%3Ctext x=\'50%25\' y=\'50%25\' font-size=\'48\' fill=\'white\' text-anchor=\'middle\' dy=\'.3em\' font-family=\'Inter, sans-serif\' font-weight=\'bold\'%3E%F0%9F%8F%86%3C/text%3E%3C/svg%3E'"
+                />
+                <!-- Date Badge -->
+                <div class="absolute top-3 right-3 bg-white/90 backdrop-blur-sm px-3 py-1 rounded-full text-xs font-semibold text-gray-700">
+                  {new Date(achievement.date).toLocaleDateString('en-US', { month: 'short', year: 'numeric' })}
+                </div>
+              </div>
+              <!-- Content Section -->
+              <div class="p-5">
+                <h3 class="text-lg font-bold text-brand-primary mb-2 group-hover:text-brand-accent transition-colors">
+                  {achievement.title}
+                </h3>
+                <p 
+                  class="text-sm text-gray-600 leading-relaxed"
+                  set:html={achievement.description}
+                />
+              </div>
+            </div>
+          ))}
         </div>
+
+        <!-- Badges Section -->
+        <section class="mt-16">
+          <h2 class="text-3xl font-bold text-brand-primary mb-8 border-b-2 border-brand-accent pb-2">
+            Badges
+          </h2>
+          <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-6">
+            {achievementsData.badges && achievementsData.badges.map((badge) => (
+              <div class="bg-white rounded-lg shadow-sm hover:shadow-md transition-all duration-300 p-4 flex flex-col items-center justify-center border border-gray-200 hover:border-brand-accent group">
+                <img 
+                  src={`${import.meta.env.BASE_URL}${badge.image}`}
+                  alt={badge.name}
+                  class="w-20 h-20 object-contain mb-2 group-hover:scale-110 transition-transform duration-300"
+                  onerror="this.src='data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' viewBox=\'0 0 100 100\'%3E%3Ccircle cx=\'50\' cy=\'50\' r=\'45\' fill=\'%234f46e5\'/%3E%3Ctext x=\'50%25\' y=\'50%25\' font-size=\'48\' fill=\'white\' text-anchor=\'middle\' dy=\'.3em\'%3E%F0%9F%8F%85%3C/text%3E%3C/svg%3E'"
+                />
+                <p class="text-xs text-center text-gray-700 font-medium leading-tight">
+                  {badge.name}
+                </p>
+              </div>
+            ))}
+          </div>
+        </section>
       </div>
     </div>
-    <!-- End Panel 2: Other Achievements -->
+    <!-- End Panel 2: Coding and Architecture -->
 
   </main>
 

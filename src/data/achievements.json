@@ -60,5 +60,55 @@
       "image": "/achievements/agent-on-demand.jpg",
       "date": "2024-11"
     }
+  ],
+  "badges": [
+    {
+      "name": "Salesforce Application Architect",
+      "image": "/badges/application-architect.png"
+    },
+    {
+      "name": "Salesforce System Architect",
+      "image": "/badges/system-architect.png"
+    },
+    {
+      "name": "Data Architect",
+      "image": "/badges/data-architect.png"
+    },
+    {
+      "name": "Sharing and Visibility Architect",
+      "image": "/badges/sharing-visibility-architect.png"
+    },
+    {
+      "name": "Integration Architect",
+      "image": "/badges/integration-architect.png"
+    },
+    {
+      "name": "Identity and Access Management",
+      "image": "/badges/identity-access-architect.png"
+    },
+    {
+      "name": "Development Lifecycle",
+      "image": "/badges/development-lifecycle-architect.png"
+    },
+    {
+      "name": "AI Associate",
+      "image": "/badges/ai-associate.png"
+    },
+    {
+      "name": "Platform Developer I",
+      "image": "/badges/platform-developer-1.png"
+    },
+    {
+      "name": "Platform Developer II",
+      "image": "/badges/platform-developer-2.png"
+    },
+    {
+      "name": "JavaScript Developer I",
+      "image": "/badges/javascript-developer-1.png"
+    },
+    {
+      "name": "Platform App Builder",
+      "image": "/badges/platform-app-builder.png"
+    }
   ]
 }
