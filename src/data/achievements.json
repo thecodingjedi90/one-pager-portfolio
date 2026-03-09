@@ -2,25 +2,25 @@
   "achievements": [
     {
       "title": "PageScoutAI - Chrome Extension",
-      "description": "AI-powered Chrome extension for <a href='https://chromewebstore.google.com/detail/mbdonpepagkldbkdlnfcgblkfoinngkp?utm_source=item-share-cb' target='_blank' class='text-brand-accent hover:underline'>automated information processing</a> across multiple browsers",
+      "description": "AI-powered Chrome extension for automated information processing across multiple browsers.<br><br><strong>Relevant Links:</strong><br>• <a href='https://chromewebstore.google.com/detail/mbdonpepagkldbkdlnfcgblkfoinngkp?utm_source=item-share-cb' target='_blank' class='text-brand-accent hover:underline'>Chrome Web Store</a>",
       "image": "/achievements/pagescoutai.png",
       "date": "2024-03"
     },
     {
       "title": "Salesforce File Migrator",
-      "description": "Automated file migration tool for <a href='#' target='_blank' class='text-brand-accent hover:underline'>Salesforce environments</a>",
+      "description": "Automated file migration tool for Salesforce environments.",
       "image": "/achievements/bulk_file_migrator.jpeg",
       "date": "2023-08"
     },
     {
       "title": "Salesforce Multi-level Related List",
-      "description": "Custom Lightning component for displaying <a href='#' target='_blank' class='text-brand-accent hover:underline'>hierarchical related records</a>",
+      "description": "Custom Lightning component for displaying hierarchical related records.",
       "image": "/achievements/related-list.jpg",
       "date": "2023-05"
     },
     {
       "title": "Outlawed - Hovercraft Racing [Unity Game]",
-      "description": "3D racing game built with Unity featuring <a href='https://cgcookie.com/posts/first-time-game-devs-share-their-journey-and-what-they-will-do-differently-next-time' target='_blank' class='text-brand-accent hover:underline'>physics-based hovercraft mechanics</a>.<br> <a href='https://www.youtube.com/watch?v=u9DBKEgSVz0&t=13s' target='_blank' class='text-brand-accent hover:underline'>Gameplay video</a>   ",
+      "description": "3D racing game built with Unity featuring physics-based hovercraft mechanics.<br><br><strong>Relevant Links:</strong><br>• <a href='https://cgcookie.com/posts/first-time-game-devs-share-their-journey-and-what-they-will-do-differently-next-time' target='_blank' class='text-brand-accent hover:underline'>CG Cookie Blog - Development Journey</a><br>• <a href='https://www.youtube.com/watch?v=u9DBKEgSVz0&t=13s' target='_blank' class='text-brand-accent hover:underline'>Gameplay Video</a>",
       "image": "/achievements/outlawed.png",
       "date": "2022-12"
     },
@@ -32,31 +32,31 @@
     },
     {
       "title": "SNAP/MAGI - GenAI Chatbot",
-      "description": "GenAI-powered chatbot using hosted LLM models for <a href='#' target='_blank' class='text-brand-accent hover:underline'>SNAP/MAGI screening solution</a>",
+      "description": "GenAI-powered chatbot using hosted LLM models for SNAP/MAGI screening solution.",
       "image": "/achievements/snap-magi.jpg",
       "date": "2024-01"
     },
     {
       "title": "KanByte - Kanban Board Application",
-      "description": "Full-featured Kanban board application for <a href='https://github.com/thecodingjedi90/KanByte' target='_blank' class='text-brand-accent hover:underline'>project and task management</a>",
+      "description": "Full-featured Kanban board application for project and task management.<br><br><strong>Relevant Links:</strong><br>• <a href='https://github.com/thecodingjedi90/KanByte' target='_blank' class='text-brand-accent hover:underline'>GitHub Repository</a>",
       "image": "/achievements/kanbyte.jpg",
       "date": "2023-04"
     },
     {
       "title": "PermaClipboard",
-      "description": "Electron.js utility for managing <a href='#' target='_blank' class='text-brand-accent hover:underline'>multiple clipboard entries</a> with predefined frequently-used items",
+      "description": "Electron.js utility for managing multiple clipboard entries with predefined frequently-used items.",
       "image": "/achievements/permaclipboard.jpg",
       "date": "2024-06"
     },
     {
       "title": "Meta Chain Salesforce Pipeline",
-      "description": "Salesforce utility inspired by traditional <a href='#' target='_blank' class='text-brand-accent hover:underline'>Java pipeline processing</a>, backed by custom metadata",
+      "description": "Salesforce utility inspired by traditional Java pipeline processing, backed by custom metadata.",
       "image": "/achievements/meta-chain.jpg",
       "date": "2024-08"
     },
     {
       "title": "AgentOnDemand",
-      "description": "Python utility to host <a href='#' target='_blank' class='text-brand-accent hover:underline'>AWS Strands agent</a> with customizable prompts to power GenAI-based applications",
+      "description": "Python utility to host AWS Strands agent with customizable prompts to power GenAI-based applications.",
       "image": "/achievements/agent-on-demand.jpg",
       "date": "2024-11"
     }
