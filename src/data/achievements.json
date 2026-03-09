@@ -26,8 +26,8 @@
     },
     {
       "title": "Support Squad - IOT Switch",
-      "description": "IoT-based switch control system integrated with <a href='#' target='_blank' class='text-brand-accent hover:underline'>Salesforce and Node MCU</a>",
-      "image": "/achievements/support-squad.jpg",
+      "description": "Developed an end-to-end IoT proof-of-concept designed to eliminate customer service friction. By bypassing traditional phone queues and manual ticketing, the system used an ESP32-based \"One-Touch\" hardware switch to instantly trigger Salesforce cases via secure endpoints. The solution featured automated department routing and predictive maintenance capabilities, leveraging onboard temperature and vibration sensors to log service requests before a mechanical failure occurred.",
+      "image": "/achievements/supportsquad.jpg",
       "date": "2023-02"
     },
     {
@@ -109,6 +109,10 @@
     {
       "name": "Platform App Builder",
       "image": "/badges/platform-app-builder.png"
+    },
+    {
+      "name": "Google GenAI : Beyond Chatbot",
+      "image": "/badges/google_genai_beyondChatbot.png"
     }
   ]
 }
