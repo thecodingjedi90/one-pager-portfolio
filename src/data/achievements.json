@@ -44,7 +44,7 @@
     },
     {
       "title": "PermaClipboard",
-      "description": "Electron.js utility for managing multiple clipboard entries with predefined frequently-used items.",
+      "description": "Developed a custom, cross-platform, Electron-based clipboard utility with a transparent, \"Always on Top\" glassmorphic UI. This tool significantly enhances remote workflow efficiency by providing:Dual Clipboard Management: Automatically captures rolling clipboard history and offers one-click access to frequently used commands and scripts loaded from a local JSON file.Integrated Anti-Idle Mouse Mover: Simulates mouse activity every 30 seconds to prevent remote sessions and screens from timing out, ensuring continuous system and session availability.Impact: Solves daily workflow friction by eliminating the need for notepad-based copy-paste shuffles and preventing productivity loss due to idle system timeouts.",
       "image": "/achievements/permaclipboard.jpg",
       "date": "2024-06"
     },
