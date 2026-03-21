@@ -38,7 +38,7 @@
     },
     {
       "title": "KanByte - Kanban Board Application",
-      "description": "Full-featured Kanban board application for project and task management.<br><br><strong>Relevant Links:</strong><br>• <a href='https://github.com/thecodingjedi90/KanByte' target='_blank' class='text-brand-accent hover:underline'>GitHub Repository</a>",
+      "description": "<a href='kanbyte.netlify.app' target='_blank' class='text-brand-accent hover:underline'>Application Link</a> :Full-featured Kanban board application for project and task management.Kanbyte offers a streamlined interface to visualize and manage tasks across different stages, significantly improving team collaboration and individual productivity.<br><br><strong>Relevant Links:</strong><br>• <a href='https://github.com/thecodingjedi90/KanByte' target='_blank' class='text-brand-accent hover:underline'>GitHub Repository</a>",
       "image": "/achievements/kanbyte.jpg",
       "date": "2023-04"
     },
