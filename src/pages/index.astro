@@ -228,22 +228,39 @@ import achievementsData from '../data/achievements.json';
         <!-- Badges Section -->
         <section class="mt-16">
           <h2 class="text-3xl font-bold text-brand-primary mb-8 border-b-2 border-brand-accent pb-2">
-            Badges
+            Salesforce Certifications
           </h2>
           <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-6">
-            {achievementsData.badges && achievementsData.badges.map((badge) => (
-              <div class="bg-white rounded-lg shadow-sm hover:shadow-md transition-all duration-300 p-4 flex flex-col items-center justify-center border border-gray-200 hover:border-brand-accent group">
-                <img 
-                  src={`${import.meta.env.BASE_URL}${badge.image}`}
-                  alt={badge.name}
-                  class="w-20 h-20 object-contain mb-2 group-hover:scale-110 transition-transform duration-300"
-                  onerror="this.src='data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' viewBox=\'0 0 100 100\'%3E%3Ccircle cx=\'50\' cy=\'50\' r=\'45\' fill=\'%234f46e5\'/%3E%3Ctext x=\'50%25\' y=\'50%25\' font-size=\'48\' fill=\'white\' text-anchor=\'middle\' dy=\'.3em\'%3E%F0%9F%8F%85%3C/text%3E%3C/svg%3E'"
-                />
-                <p class="text-xs text-center text-gray-700 font-medium leading-tight">
-                  {badge.name}
-                </p>
-              </div>
-            ))}
+            {achievementsData.badges && achievementsData.badges.map((badge) => {
+              const formatDate = (dateString: string) => {
+                const date = new Date(dateString);
+                return date.toLocaleDateString('en-US', { month: 'short', year: 'numeric' });
+              };
+              return (
+                <div 
+                  class="bg-white rounded-lg shadow-sm hover:shadow-md transition-all duration-300 p-4 flex flex-col items-center justify-center border border-gray-200 hover:border-brand-accent group relative"
+                  title={`Issued: ${formatDate(badge.date)}${badge.retired ? ' (Retired)' : ''}`}
+                >
+                  {badge.retired && (
+                    <div class="absolute top-2 right-2 bg-gray-500 text-white text-[10px] px-2 py-0.5 rounded-full font-semibold">
+                      Retired
+                    </div>
+                  )}
+                  <img 
+                    src={`${import.meta.env.BASE_URL}${badge.image}`}
+                    alt={badge.name}
+                    class="w-20 h-20 object-contain mb-2 group-hover:scale-110 transition-transform duration-300"
+                    onerror="this.src='data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' viewBox=\'0 0 100 100\'%3E%3Ccircle cx=\'50\' cy=\'50\' r=\'45\' fill=\'%234f46e5\'/%3E%3Ctext x=\'50%25\' y=\'50%25\' font-size=\'48\' fill=\'white\' text-anchor=\'middle\' dy=\'.3em\'%3E%F0%9F%8F%85%3C/text%3E%3C/svg%3E'"
+                  />
+                  <p class="text-xs text-center text-gray-700 font-medium leading-tight mb-1">
+                    {badge.name}
+                  </p>
+                  <p class="text-[10px] text-gray-500 font-normal">
+                    {formatDate(badge.date)}
+                  </p>
+                </div>
+              );
+            })}
           </div>
         </section>
       </div>

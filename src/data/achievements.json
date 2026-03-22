@@ -1,118 +1,142 @@
 {
   "achievements": [
     {
-      "title": "PageScoutAI - Chrome Extension",
-      "description": "AI-powered Chrome extension for automated information processing across multiple browsers.<br><br><strong>Relevant Links:</strong><br>• <a href='https://chromewebstore.google.com/detail/mbdonpepagkldbkdlnfcgblkfoinngkp?utm_source=item-share-cb' target='_blank' class='text-brand-accent hover:underline'>Chrome Web Store</a>",
-      "image": "/achievements/pagescoutai.png",
-      "date": "2025-12"
-    },
-    {
-      "title": "Salesforce File Migrator",
-      "description": "Automated file migration tool for Salesforce environments.",
-      "image": "/achievements/bulk_file_migrator.jpeg",
-      "date": "2026-02"
-    },
-    {
-      "title": "Salesforce Multi-level Related List",
-      "description": "Custom Lightning component for displaying hierarchical related records.",
-      "image": "/achievements/related-list.jpg",
-      "date": "2023-05"
-    },
-    {
-      "title": "Outlawed - Hovercraft Racing [Unity Game]",
-      "description": "3D racing game built with Unity featuring physics-based hovercraft mechanics.<br><br><strong>Relevant Links:</strong><br>• <a href='https://drive.google.com/file/d/1VqlAS3r03eGZnqsZf8iYFG1qTUpCnBtj/view?usp=sharing' target='_blank' class='text-brand-accent hover:underline'>APK Link</a>• <a href='https://cgcookie.com/posts/first-time-game-devs-share-their-journey-and-what-they-will-do-differently-next-time' target='_blank' class='text-brand-accent hover:underline'>CG Cookie Blog - Development Journey</a><br>• <a href='https://www.youtube.com/watch?v=u9DBKEgSVz0&t=13s' target='_blank' class='text-brand-accent hover:underline'>Gameplay Video</a>",
-      "image": "/achievements/outlawed.png",
-      "date": "2016-08"
-    },
-    {
-      "title": "Support Squad - IOT Switch",
-      "description": "Developed an end-to-end IoT proof-of-concept designed to eliminate customer service friction. By bypassing traditional phone queues and manual ticketing, the system used an ESP32-based \"One-Touch\" hardware switch to instantly trigger Salesforce cases via secure endpoints. The solution featured automated department routing and predictive maintenance capabilities, leveraging onboard temperature and vibration sensors to log service requests before a mechanical failure occurred.",
-      "image": "/achievements/supportsquad.jpg",
-      "date": "2019-11"
-    },
-    {
-      "title": "SNAP/MAGI - GenAI Chatbot",
-      "description": "GenAI-powered chatbot using hosted LLM models for SNAP/MAGI screening solution.",
-      "image": "/achievements/snap-magi.jpg",
-      "date": "2024-06"
-    },
-    {
-      "title": "KanByte - Kanban Board Application",
-      "description": "<a href='https://kanbyte.netlify.app' target='_blank' class='text-brand-accent hover:underline'>Application Link</a> :Full-featured Kanban board application for project and task management.Kanbyte offers a streamlined interface to visualize and manage tasks across different stages, significantly improving team collaboration and individual productivity.<br><br><strong>Relevant Links:</strong><br>• <a href='https://github.com/thecodingjedi90/KanByte' target='_blank' class='text-brand-accent hover:underline'>GitHub Repository</a>",
-      "image": "/achievements/kanbyte.jpg",
-      "date": "2025-10"
-    },
-    {
-      "title": "PermaClipboard",
-      "description": "<a href='https://drive.google.com/file/d/1dcWHLfoy88XsiCQMSxdhv_Hq2HdyY2vj/view?usp=drive_link' target='_blank' class='text-brand-accent hover:underline'>Download Link</a>Developed a custom, cross-platform, Electron-based clipboard utility with a transparent, \"Always on Top\" glassmorphic UI. This tool significantly enhances remote workflow efficiency by providing:Dual Clipboard Management: Automatically captures rolling clipboard history and offers one-click access to frequently used commands and scripts loaded from a local JSON file.Integrated Anti-Idle Mouse Mover: Simulates mouse activity every 30 seconds to prevent remote sessions and screens from timing out, ensuring continuous system and session availability.Impact: Solves daily workflow friction by eliminating the need for notepad-based copy-paste shuffles and preventing productivity loss due to idle system timeouts.",
-      "image": "/achievements/permaclipboard.jpg",
-      "date": "2026-02"
-    },
-    {
-      "title": "Meta Chain Salesforce Pipeline",
-      "description": "Salesforce utility inspired by traditional Java pipeline processing, backed by custom metadata.",
-      "image": "/achievements/meta-chain.jpg",
-      "date": "2026-02"
-    },
-    {
       "title": "AgentOnDemand",
       "description": "Python utility to host AWS Strands agent with customizable prompts to power GenAI-based applications.",
       "image": "/achievements/agent-on-demand.jpg",
       "date": "2026-04"
+    },
+    {
+      "title": "PermaClipboard",
+      "description": "Cross-platform, Electron-based clipboard utility with transparent \"Always on Top\" glassmorphic UI. Features dual clipboard management with rolling history and quick access to frequently used commands, plus integrated anti-idle mouse mover to prevent session timeouts.<br><br><strong>Links:</strong> <a href='https://drive.google.com/file/d/1dcWHLfoy88XsiCQMSxdhv_Hq2HdyY2vj/view?usp=drive_link' target='_blank' class='text-brand-accent hover:underline'>Download</a>",
+      "image": "/achievements/permaclipboard.jpg",
+      "date": "2026-02"
+    },
+    {
+      "title": "Salesforce File Migrator",
+      "description": "Automated file migration tool for Salesforce environments, enabling efficient bulk transfer of files between orgs.<br><br><strong>Links:</strong> <a href='https://login.salesforce.com/packaging/installPackage.apexp?p0=04tf6000000B8YXAA0' target='_blank' class='text-brand-accent hover:underline'>Install Package</a>",
+      "image": "/achievements/bulk_file_migrator.jpeg",
+      "date": "2026-02"
+    },
+    {
+      "title": "Meta Chain Salesforce Pipeline",
+      "description": "Salesforce utility inspired by traditional Java pipeline processing, backed by custom metadata for flexible, configurable data flows.",
+      "image": "/achievements/meta-chain.jpg",
+      "date": "2026-02"
+    },
+    {
+      "title": "PageScoutAI - Chrome Extension",
+      "description": "AI-powered Chrome extension for automated information processing across multiple browsers.<br><br><strong>Links:</strong> <a href='https://chromewebstore.google.com/detail/mbdonpepagkldbkdlnfcgblkfoinngkp?utm_source=item-share-cb' target='_blank' class='text-brand-accent hover:underline'>Chrome Web Store</a>",
+      "image": "/achievements/pagescoutai.png",
+      "date": "2025-12"
+    },
+    {
+      "title": "KanByte - Kanban Board Application",
+      "description": "Full-featured Kanban board application for project and task management. Offers a streamlined interface to visualize and manage tasks across different stages, significantly improving team collaboration and productivity.<br><br><strong>Links:</strong> <a href='https://kanbyte.netlify.app' target='_blank' class='text-brand-accent hover:underline'>Live App</a> • <a href='https://github.com/thecodingjedi90/KanByte' target='_blank' class='text-brand-accent hover:underline'>GitHub</a>",
+      "image": "/achievements/kanbyte.jpg",
+      "date": "2025-10"
+    },
+    {
+      "title": "SNAP/MAGI - GenAI Chatbot",
+      "description": "GenAI-powered chatbot using hosted LLM models for SNAP/MAGI screening solution, streamlining eligibility determinations.",
+      "image": "/achievements/snap-magi.jpg",
+      "date": "2024-06"
+    },
+    {
+      "title": "Salesforce Multi-level Related List",
+      "description": "Custom Lightning component for displaying hierarchical related records with multi-level depth navigation.",
+      "image": "/achievements/related-list.jpg",
+      "date": "2023-05"
+    },
+    {
+      "title": "Support Squad - IoT Switch",
+      "description": "End-to-end IoT proof-of-concept designed to eliminate customer service friction. ESP32-based \"One-Touch\" hardware switch instantly triggers Salesforce cases via secure endpoints. Features automated department routing and predictive maintenance using onboard temperature and vibration sensors.",
+      "image": "/achievements/supportsquad.jpg",
+      "date": "2019-11"
+    },
+    {
+      "title": "Outlawed - Hovercraft Racing [Unity Game]",
+      "description": "3D racing game built with Unity featuring physics-based hovercraft mechanics and dynamic gameplay.<br><br><strong>Links:</strong> <a href='https://drive.google.com/file/d/1VqlAS3r03eGZnqsZf8iYFG1qTUpCnBtj/view?usp=sharing' target='_blank' class='text-brand-accent hover:underline'>APK</a> • <a href='https://cgcookie.com/posts/first-time-game-devs-share-their-journey-and-what-they-will-do-differently-next-time' target='_blank' class='text-brand-accent hover:underline'>Dev Journey</a> • <a href='https://www.youtube.com/watch?v=u9DBKEgSVz0&t=13s' target='_blank' class='text-brand-accent hover:underline'>Gameplay Video</a>",
+      "image": "/achievements/outlawed.png",
+      "date": "2016-08"
     }
   ],
   "badges": [
     {
-      "name": "Salesforce Application Architect",
-      "image": "/badges/application-architect.png"
-    },
-    {
-      "name": "Salesforce System Architect",
-      "image": "/badges/system-architect.png"
-    },
-    {
-      "name": "Data Architect",
-      "image": "/badges/data-architect.png"
-    },
-    {
-      "name": "Sharing and Visibility Architect",
-      "image": "/badges/sharing-visibility-architect.png"
+      "name": "System Architect",
+      "image": "/badges/system-architect.png",
+      "date": "2023-11"
     },
     {
       "name": "Integration Architect",
-      "image": "/badges/integration-architect.png"
+      "image": "/badges/integration-architect.png",
+      "date": "2023-11"
     },
     {
-      "name": "Identity and Access Management",
-      "image": "/badges/identity-access-architect.png"
+      "name": "Identity and Access Management Architect",
+      "image": "/badges/identity-access-architect.png",
+      "date": "2023-08"
     },
     {
-      "name": "Development Lifecycle",
-      "image": "/badges/development-lifecycle-architect.png"
+      "name": "Platform Administrator II",
+      "image": "/badges/platform-administrator-2.png",
+      "date": "2023-06"
     },
     {
-      "name": "AI Associate",
-      "image": "/badges/ai-associate.png"
+      "name": "Platform Foundations",
+      "image": "/badges/platform-foundations.png",
+      "date": "2023-04"
     },
     {
-      "name": "Platform Developer I",
-      "image": "/badges/platform-developer-1.png"
+      "name": "Service Cloud Consultant",
+      "image": "/badges/service-cloud-consultant.png",
+      "date": "2023-04"
     },
     {
-      "name": "Platform Developer II",
-      "image": "/badges/platform-developer-2.png"
+      "name": "Platform Administrator",
+      "image": "/badges/platform-administrator.png",
+      "date": "2022-07"
     },
     {
-      "name": "JavaScript Developer I",
-      "image": "/badges/javascript-developer-1.png"
+      "name": "Development Lifecycle and Deployment Architect",
+      "image": "/badges/development-lifecycle-architect.png",
+      "date": "2022-03"
+    },
+    {
+      "name": "Order Management Administrator",
+      "image": "/badges/order-management-administrator.png",
+      "date": "2022-02"
+    },
+    {
+      "name": "Application Architect",
+      "image": "/badges/application-architect.png",
+      "date": "2020-08"
     },
     {
       "name": "Platform App Builder",
-      "image": "/badges/platform-app-builder.png"
+      "image": "/badges/platform-app-builder.png",
+      "date": "2020-08"
     },
     {
-      "name": "Google GenAI : Beyond Chatbot",
-      "image": "/badges/google_genai_beyondChatbot.png"
+      "name": "Data Architect",
+      "image": "/badges/data-architect.png",
+      "date": "2020-02"
+    },
+    {
+      "name": "Sharing and Visibility Architect",
+      "image": "/badges/sharing-visibility-architect.png",
+      "date": "2019-11"
+    },
+    {
+      "name": "Platform Developer I",
+      "image": "/badges/platform-developer-1.png",
+      "date": "2019-04"
+    },
+    {
+      "name": "AI Associate",
+      "image": "/badges/ai-associate.png",
+      "date": "2024-06",
+      "retired": true
     }
   ]
 }
